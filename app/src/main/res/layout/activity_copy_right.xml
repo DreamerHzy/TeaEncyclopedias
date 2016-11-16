@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_copy_right"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.ckw.teaencyclopedias.activities.CopyRightActivity">
+
+
+        <ImageView
+            android:id="@+id/copy_back"
+            android:src="@mipmap/searchbackbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/copy_info"
+            android:layout_toRightOf="@id/copy_back"
+            android:text="版权信息"
+            android:textSize="28sp"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="80dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/copy_home"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/righttopbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <View
+            android:background="#46d127"
+            android:layout_below="@id/copy_home"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"/>
+
+        <ImageView
+            android:id="@+id/copy_logo"
+            android:src="@mipmap/logo"
+            android:layout_below="@id/copy_info"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/copy_buy"
+            android:text="买买买.茶百科"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_below="@id/copy_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/copy_android"
+            android:text="Android v1.0.2"
+            android:textSize="15sp"
+            android:layout_below="@id/copy_buy"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/copy_developer"
+            android:layout_below="@id/copy_android"
+            android:text="Developer: Teacher Liu"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:textSize="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/copy_content"
+            android:text="茶百科，字如其名，这里只谈茶！结识茶人，学茶、品茶、悟道、继承传播中国茶文化。教你学会识茶选茶、储存茶。更能品茶论道、赏茶雅玩。爱品茗。"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/copy_developer"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/loadmore"
+            android:onClick="clickForMore"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/copy_content"
+            android:text="更多"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:drawableRight="@mipmap/loadmore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/copy_right"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/loadmore"
+            android:text="Copyright@2010-2013 MaiMaiCha.cn"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="买买茶 版权所有"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/copy_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+
+</RelativeLayout>

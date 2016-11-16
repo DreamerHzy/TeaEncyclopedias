@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_details_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.ckw.teaencyclopedias.activities.DetailsItemActivity">
+
+    <RelativeLayout
+        android:id="@+id/details_relative"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#0f0"
+        >
+
+        <TextView
+            android:id="@+id/details_title"
+            android:text="内容的总结"
+            android:textSize="30sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/details_time"
+            android:layout_alignParentBottom="true"
+            android:text="显示时间"
+            android:textSize="15sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/details_source"
+            android:text="显示来源"
+            android:textSize="15sp"
+            android:layout_toRightOf="@id/details_time"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <WebView
+        android:id="@+id/webView_detail"
+        android:layout_below="@id/details_relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></WebView>
+    <LinearLayout
+        android:id="@+id/detailsItem_linear"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:id="@+id/contextback"
+            android:src="@mipmap/contentback"
+            android:onClick="detailsClick"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:id="@+id/contentshare"
+            android:src="@mipmap/contentshare"
+            android:onClick="detailsClick"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:id="@+id/collectcontent"
+            android:src="@mipmap/collectcontent"
+            android:onClick="detailsClick"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
